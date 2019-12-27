@@ -1,6 +1,7 @@
 CREATE VIEW [dbo].[CisView_PlanningShipmentsVGM]
 AS
 SELECT      dbo.TblData_Shipment.iShipment_id, 
+				dbo.TblData_Shipment.fid_FileId,
 				fid_FilePlanning,
 				cFilePlanningNr,
 				dbo.TblData_Shipment.cBnumber, dbo.TblData_Shipment.fVGM, 
