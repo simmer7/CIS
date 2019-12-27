@@ -1,8 +1,1 @@
-
-set identity_insert TblBase_Wind_JV on
-
-delete from	TblBase_Wind_JV where	iWindId = 3
-
-insert [dbo].[TblBase_Wind_JV] ([iWindId], [cWindDirection], [fWindSpeed], [dDatum]) VALUES (3, N'South', 2, NULL)
-
-set identity_insert TblBase_Wind_JV off
+INSERT [dbo].[TblSys_TaskSpecs] ([TaskID], [cVolgorde], [cTaskLabel], [cTabname], [cComment], [iParentInMenu], [iParentTaskID], [fid_GetDataInfoFromTask], [cSqlObject], [cSQLAlternateObject], [cSqlChangesObject], [cSelectAction], [bRecordDelete], [bRecordUpdate], [bRecordInsert], [bRecordGridInsert], [cBlockInsertOnFunction], [bExportExcel], [iNodeStatus], [MaxRecords], [DefaultRecords], [UpdateFields], [cStoredProcParams], [bIsView], [iPageSize], [bCopyWithParent], [HelpText], [cFileFolder], [cSQLobjectAccept], [bStartWithChildInsert], [bStartAsDetail], [iDocSpecOnInsert], [iDocSpecOnUpdate], [iTabFilterLabel], [cClearAfterTabFilter], [cExecuteAfterUpdate], [cExecuteAfterInsert], [iTaskAfterInsert]) VALUES (76, N'801  ', N'CIS Shipments Booking', N'', N'', 45, 0, NULL, N'CisView_Shipment', NULL, NULL, N'Details', 0, 1, 1, 0, NULL, 0, 1, 100, 15, 0, NULL, NULL, 0, NULL, NULL, NULL, NULL, 1, NULL, 68, 68, NULL, NULL, N'CisSp_GenerateShipmentServices(,0)', N'CisSp_GenerateShipmentServices(,0)', 93)
